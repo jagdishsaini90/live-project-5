@@ -1,0 +1,116 @@
+:root {
+  --button-bg: #ba0cc5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  background: #000;
+  padding: 20px 60px;
+}
+
+.navbar img {
+  width: 90px;
+  height: 30px;
+  margin-right: 30px;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  list-style: none;
+  margin-left: 30px;
+  padding-left: 30px;
+  position: relative;
+}
+
+.list::before {
+  position: absolute;
+  content: "";
+  top: -50%;
+  left: 0;
+  width: 1px;
+  height: 200%;
+  background: #fff;
+}
+
+.list-item {
+  margin: 0 30px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #fff;
+}
+
+.list-item:nth-child(1)::after {
+  content: ">";
+  display: inline-block;
+  margin-left: 10px;
+  transform: rotate(90deg);
+}
+
+.list-item:hover {
+  color: #f6a308;
+}
+
+.navbar > div:last-child {
+  margin-left: auto;
+}
+
+.button-small,
+.button-large {
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--button-bg);
+  border: none;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 1px;
+  margin: 0 40px 0 0;
+  cursor: pointer;
+}
+
+/* Home  */
+/* Home */
+
+.hero {
+  background-image: url("./assets/bg.png");
+  background-position: top top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-top: 150px;
+  min-height: 100vh;
+}
+
+.hero-heading,
+.hero-description {
+  font-size: 5rem;
+  color: #fff;
+  max-width: 60%;
+  margin: auto;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hero-description {
+  font-size: 1.8rem;
+}
+
+.button-large {
+  width: 300px;
+  height: 70px;
+  font-size: 1.4rem;
+  margin: auto;
+  margin-top: 70px;
+}
